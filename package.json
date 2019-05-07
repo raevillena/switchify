@@ -1,0 +1,15 @@
+{
+  "name": "switchify",
+  "version": "1.0.0",
+  "description": "switch api service",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rae",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^2.18.8",
+    "nodemon": "^1.19.0"
+  }
+}

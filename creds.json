@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "port": "1883",
+    "username": "pi",
+    "password": "piserver",
+    "clientId": "pi3-server"
+}
