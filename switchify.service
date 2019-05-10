@@ -1,0 +1,11 @@
+[Unit]
+Description=Switchify HTTP API Application
+After=network-online.target
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/home/pi/switchify/
+ExecStart=/usr/local/bin/node /home/pi/switchify/worker.js
+
+[Install]
+WantedBy=multi-user.target
