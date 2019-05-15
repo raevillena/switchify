@@ -12,36 +12,6 @@ var topics = require('./topics.json')
 //import device names
 var devname = require('./devname.json')
 
-//on connect, subscribe to topics
-client.on('connect', function () {
-    client.subscribe(topics.dev1)
-    client.subscribe(topics.dev2)
-    client.subscribe(topics.dev3)
-    client.subscribe(topics.dev4)
-    client.subscribe(topics.dev5)
-})
-
-//on connect subscribe to topics for feedback payload
-client.on('message', function (topic, message) {
-    switch (topic) {
-        case topic.dev1:
-            console.log(message.toString())
-            break
-        case topic.dev2:
-            console.log(message.toString())
-            break
-        case topic.dev3:
-            console.log(message.toString())
-            break
-        case topic.dev4:
-            console.log(message.toString())
-            break
-        case topic.dev5:
-            console.log(message.toString())
-            break
-    }
-})
-
 
 // Configure our HTTP server to respond with Hello World to all requests.
 var server = http.createServer(function (request, response) {
