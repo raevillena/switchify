@@ -57,55 +57,45 @@ var server = http.createServer(function (request, response) {
     switch (queryData.devID) {
         case devname.dev1:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev1, '1')
-                console.log('dev1 turning on')
+                client.publish(topics.dev1, '1',[retain:true])
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev1, '0')
-                console.log('dev1 turning off')
+                client.publish(topics.dev1, '0',[retain:true])
             } else {
                 //do nothing
             }
             break;
         case devname.dev2:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev2, '1')
-                console.log('dev2 turning on')
+                client.publish(topics.dev2, '1',[retain:true])
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev2, '0')
-                console.log('dev2 turning off')
+                client.publish(topics.dev2, '0',[retain:true])
             } else {
                 //do nothing
             }
             break;
         case devname.dev3:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev3, '1')
-                console.log('dev3 turning on')
+                client.publish(topics.dev3, '1',[retain:true])
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev3, '0')
-                console.log('dev3 turning off')
+                client.publish(topics.dev3, '0',[retain:true])
             } else {
                 //do nothing
             }
             break;
         case devname.dev4:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev4, '1')
-                console.log('dev4 turning on')
+                client.publish(topics.dev4, '1',[retain:true])
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev4, '0')
-                console.log('dev4 turning off')
+                client.publish(topics.dev4, '0',[retain:true])
             } else {
                 //do nothing
             }
             break;
         case devname.dev5:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev5, '1')
-                console.log('dev5 turning on')
+                client.publish(topics.dev5, '1',[retain:true])
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev5, '0')
-                console.log('dev5 turning off')
+                client.publish(topics.dev5, '0',[retain:true])
             } else {
                 //do nothing
             }
