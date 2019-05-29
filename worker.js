@@ -27,45 +27,45 @@ var server = http.createServer(function (request, response) {
     switch (queryData.devID) {
         case devname.dev1:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev1, '1',[retain:true])
+                client.publish(topics.dev1, '1', { retain: true })
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev1, '0',[retain:true])
+                client.publish(topics.dev1, '0', { retain: true })
             } else {
                 //do nothing
             }
             break;
         case devname.dev2:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev2, '1',[retain:true])
+                client.publish(topics.dev2, '1', { retain: true })
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev2, '0',[retain:true])
+                client.publish(topics.dev2, '0', { retain: true })
             } else {
                 //do nothing
             }
             break;
         case devname.dev3:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev3, '1',[retain:true])
+                client.publish(topics.dev3, '1', { retain: true })
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev3, '0',[retain:true])
+                client.publish(topics.dev3, '0', { retain: true })
             } else {
                 //do nothing
             }
             break;
         case devname.dev4:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev4, '1',[retain:true])
+                client.publish(topics.dev4, '1', { retain: true })
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev4, '0',[retain:true])
+                client.publish(topics.dev4, '0', { retain: true })
             } else {
                 //do nothing
             }
             break;
         case devname.dev5:
             if (queryData.action == 'on' || queryData.action == '1') {
-                client.publish(topics.dev5, '1',[retain:true])
+                client.publish(topics.dev5, '1', { retain: true })
             } else if (queryData.action == 'off' || queryData.action == '0') {
-                client.publish(topics.dev5, '0',[retain:true])
+                client.publish(topics.dev5, '0', { retain: true })
             } else {
                 //do nothing
             }
